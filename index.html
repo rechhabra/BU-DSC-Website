@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- import jQuery -->
+
+    <script>
+    $(document).ready(function(){
+      $("li join a").hover(function(){
+        $(this).css("color", "#EA4235");
+        }, function(){
+        $(this).css("color", "#FFF");
+      });
+      $("li events a").hover(function(){
+        $(this).css("color", "#4284F5");
+        }, function(){
+        $(this).css("color", "#FFF");
+      });
+      $("li team a").hover(function(){
+        $(this).css("color", "#0C9D58");
+        }, function(){
+        $(this).css("color", "#FFF");
+      });
+      $("li about a").hover(function(){
+        $(this).css("color", "#FABE08");
+        }, function(){
+        $(this).css("color", "#FFF");
+      });
+    });
+    </script>
+    <!-- SCRIPT TO SCROLL TO ABOUT SECTION WHEN 'ABOUT US' IS CLICKED-->
+    <script>
+        $(document).ready(function(){
+        $("li about a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <div style = "position: fixed; width: 100%">
+      <ul><!--frozen are the position fixed-->
+        <li><fake style="float: right"></fake></li>
+        <li><about><a href="#scrollToAbout">About Us</a></about></li>
+        <li><events><a href="events.html"> Events</a></events></li>
+        <li><team><a href="team.html">Our Team</a></team></li>
+        <li><join><a href="join.html">Join</a></join></li>
+        <li><fake style="float: left;"></fake></li>
+        <li><img src = "Images/menulogo.png" width = 146px height = 45px style = "padding: 7px" href="index.html"> </img></li> 
+      </ul>
+    </div>
+    <asect></asect>
+  </head>
+
+  <body>
+    <br></br><br></br><br></br>
+    <header><b>BOSTON UNIVERSITY</b></header>
+    <center><subheader>Developer Student Clubs | Powered by Google Developers</subheader></center>
+    <br></br>
+    <b><center style = "font-family: Courier new; color: #FF0000">#developerstudentclubs   #googlestudents   #growwithgoogle<center></b>
+    <br></br><br></br><br></br>
+
+    <div style = "list-style-type: none; margin: 0px -20px;padding: 10px ;background-color: #333;overflow: hidden;width: 102%; overflow: hidden" id="scrollToAbout">
+      <aboutSide>ABOUT DSC</aboutSide><br></br>
+      <!-- fake element to make image less to the right-->
+      <p style = "display: inline; width: 4%; height: 2px; float: right"></p>
+      <img src = "Images/home_aboutImage.jpg" style="width: 65%; display: inline; float: right"></img>
+      <aboutSide style = "font-size: 15px; float: left display: inline">Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</aboutSide>
+      <p style = "height: 20px; width: 100%; display: inline; float: left"></p>
+    </div>
+
+
+  
+  <!--footer-->
+  <div style = "display: inline; float: left; overflow: hidden; width: 100%; margin: 0px -10px; padding: 17.5px; height: 200px; background-color: #555">
+  
+  </div>
+
+  
+  </body>
+</html>

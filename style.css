@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*smooth scrolling*/
+html{
+  scroll-behavior: smooth;
+}
+/*menu bar*/
+ul {
+  list-style-type: none;
+  margin: -10px -20px;
+  padding: 0;
+  height: 60px;
+  background-color: #777;/*to get the whole horizontal, fills it up with this color*/
+  overflow: hidden;
+}
+
+asect {
+  list-style-type: none;
+  margin: -10px 0px;
+  padding: 0;
+  height: 600px;
+  background-color: #333;/*to get the whole horizontal, fills it up with this color*/
+  overflow: hidden;
+}
+
+aboutSide{
+  display: inline;
+  vertical-align: center;
+  float: left;
+  color: white;
+  font-family: "Open Sans"; /*idk y font famiily worked instead of font*/
+  padding: 20px; /*same height as menu logo*/
+  width: 25%;
+  font-size: 35px;
+  align-items: center;  
+  text-align: center;
+  text-decoration: none; /*remove underline in menu link buttons*/
+}
+li logo{
+  float: left;
+  background: "Images/menulogo.png";
+  width: 167px;
+  height: 50px;
+  padding: 5px;
+  vertical-align: center;
+}
+
+/*menu buttons*/
+li a{
+  display: inline;
+  vertical-align: center;
+  float: right;
+  color: white;
+  font-family: "Open Sans"; /*idk y font famiily worked instead of font*/
+  padding: 20px; /*same height as menu logo*/
+  width: 10%;
+  align-items: center;  
+  text-align: center;
+  text-decoration: none; /*remove underline in menu link buttons*/
+}
+
+
+
+/*fake menu button*/
+li fake{
+  display: inline;
+  /*float: right;*/
+  padding: 20px;
+  width: 10%;
+}
+
+header{
+  font-family: "Open Sans";
+  font-size: 40px;
+  text-align: center;
+}
+
+subheader{
+  font-family: "Open Sans";
+  font-size: 20px;
+  text-align: center;
+}
+/*any buttons*/
+
+/*
+a:hover{
+  background-color: #707070;
+}*/
